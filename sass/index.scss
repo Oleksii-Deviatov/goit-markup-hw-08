@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./base/box-sizing";
+@import "./utils/placeholders";
+@import "./components/header/header";
+
+@import "./components/main/hero";
+@import "./components/main/button";
+
+@import "./components/main/advantages";
+@import "./components/main/what-we-do";
+
+@import "./components/main/our-team";
+@import "./components/main/teammate-card";
+@import "./components/main/social-list";
+
+@import "./components/main/clients";
+
+@import "./components/footer/footer";
+
+@import "./components/modal/modal";

@@ -1,0 +1,34 @@
+.address__list {
+  @extend %list;
+}
+
+.address__location {
+  text-decoration: none;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $text-white-color;
+}
+
+.address__email,
+.address__tel {
+  text-decoration: none;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}

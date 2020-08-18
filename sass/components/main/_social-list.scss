@@ -1,0 +1,28 @@
+.social-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  border-radius: 50%;
+
+  transition: all 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+    fill: #ffffff;
+  }
+}
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}

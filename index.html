@@ -13,57 +13,80 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./css/index.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
     <!-- Шапка -->
     <header class="header">
       <div class="header__container">
-        <nav class="navigation">
+        <div class="header__mobile">
           <a class="logo header__logo" lang="en" href="./index.html"
-            >Web<span class="logo__studio--black">Studio</span></a
+            >Web<span class="logo__studio--black">Studio</span>
+          </a>
+          <button
+            class="header__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
           >
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--active"
-                href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a
-                class="contacts__link"
-                lang="en"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="contacts__icon" width="16" height="11">
-                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111">
-                <svg class="contacts__icon" width="10" height="15">
-                  <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header__menu-icon"
+                href="./images/icons/sprite.svg#icon-menu"
+              ></use>
+              <use
+                class="header__menu-icon-close"
+                href="./images/icons/sprite.svg#icon-menu-close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header-menu" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--active">
+                <a class="navigation__link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a
+                  class="contacts__link"
+                  lang="en"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contacts__icon" width="16" height="11">
+                    <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="10" height="15">
+                    <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -185,9 +208,8 @@
             <li class="teammate-card our-team__teammate-card">
               <img
                 class="teammate-card__photo"
-                src="./images/photos/igor.jpg"
+                src="./images/photos/mob_igor.jpg"
                 alt="фотография Игоря Демьяненко"
-                height="260"
               />
               <h3 class="teammate-card__title">Игорь Демьяненко</h3>
               <p class="teammate-card__profession">Product Designer</p>
@@ -247,9 +269,8 @@
             <li class="teammate-card our-team__teammate-card">
               <img
                 class="teammate-card__photo"
-                src="./images/photos/olga.jpg"
+                src="./images/photos/mob_olga.jpg"
                 alt="Фотография Ольги Репиной"
-                height="260"
               />
               <h3 class="teammate-card__title">Ольга Репина</h3>
               <p class="teammate-card__profession">Frontend Developer</p>
@@ -309,9 +330,8 @@
             <li class="teammate-card our-team__teammate-card">
               <img
                 class="teammate-card__photo"
-                src="./images/photos/nikola.jpg"
+                src="./images/photos/mob_nikola.jpg"
                 alt="фотография Николая Тарасова"
-                height="260"
               />
               <h3 class="teammate-card__title">Николай Тарасов</h3>
               <p class="teammate-card__profession">Marketing</p>
@@ -371,9 +391,8 @@
             <li class="teammate-card our-team__teammate-card">
               <img
                 class="teammate-card__photo"
-                src="./images/photos/mihail.jpg"
+                src="./images/photos/mob_mihail.jpg"
                 alt="фотография Ивана Николаева"
-                height="260"
               />
               <h3 class="teammate-card__title">Михаил Ермаков</h3>
               <p class="teammate-card__profession">UI Designer</p>
@@ -519,7 +538,7 @@
         </div>
         <div class="join">
           <b class="join__text footer_join-text">присоединяйтесь</b>
-          <ul class="social-list">
+          <ul class="social-list footer_social-list">
             <li class="social-list__item">
               <a
                 class="social-list__link social-list__link--grey-background-white-icons"
@@ -680,5 +699,6 @@
     </div>
     <script src="./js/sendform.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+.our-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-white-color;
+}
+.our-team__container {
+  @extend %container;
+}
+
+.our-team__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  padding: 0;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-title-color;
+}
+
+.our-team__list {
+  @extend %list;
+}
+
+.our-team__teammate-card:not(:last-child) {
+  margin-bottom: 30px;
+}
