@@ -1,0 +1,17 @@
+.our-projects {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.our-projects__container {
+  @extend %container;
+}
+
+.our-projects__radio-buttons {
+  margin-bottom: 50px;
+}
+
+.our-projects__title {
+  @extend %visually-hidden;
+}

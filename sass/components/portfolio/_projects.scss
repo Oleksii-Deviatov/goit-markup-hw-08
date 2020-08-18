@@ -1,0 +1,11 @@
+.projects {
+  @extend %list;
+}
+
+.projects__project-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+// .projects__project-card:not(:nth-child(-n + 3)) {
+//   margin-top: 30px;
+// }
