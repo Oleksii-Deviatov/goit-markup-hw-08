@@ -47,7 +47,7 @@ html {
   text-decoration: none;
 }
 
-.navigation__list, .contacts__list, .projects, .radio-buttons, .social-list, .address__list {
+.navigation__list, .contacts__list, .radio-buttons, .projects, .social-list, .address__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -224,14 +224,6 @@ html {
   padding-bottom: 60px;
 }
 
-.our-projects__radio-buttons {
-  margin-bottom: 50px;
-}
-
-.projects__project-card:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .radio-buttons {
   flex-wrap: wrap;
   display: flex;
@@ -270,8 +262,15 @@ html {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+.our-projects__radio-buttons {
+  margin-bottom: 50px;
+}
+
+.projects__project-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .project-card {
-  width: 100%;
   list-style: none;
 }
 
@@ -290,6 +289,7 @@ html {
 
 .project-card__img {
   display: block;
+  width: 100%;
 }
 
 .project-card__description {
