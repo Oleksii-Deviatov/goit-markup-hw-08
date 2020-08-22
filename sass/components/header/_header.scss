@@ -239,9 +239,10 @@
   .contacts__icon {
     margin-right: 8px;
   }
-
-  .contacts__item:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (max-width: 1200px) {
+    .contacts__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   .navigation__item--active::after {

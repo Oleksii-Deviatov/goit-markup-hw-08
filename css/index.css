@@ -255,9 +255,15 @@ html {
   .contacts__icon {
     margin-right: 8px;
   }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 767px) {
   .navigation__item--active::after {
     bottom: 4px;
   }
