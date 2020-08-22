@@ -1,10 +1,11 @@
 .header {
-  position: fixed;
-  z-index: 100;
+  position: relative;
   top: 0;
   width: 100%;
   outline: #ececec solid 1px;
   background-color: $primary-white-color;
+
+  z-index: 100;
 }
 
 .header__container {
@@ -84,6 +85,13 @@
   padding: 0;
   width: 40px;
   height: 40px;
+
+  &:hover {
+    fill: $accent-color;
+  }
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .navigation__list {

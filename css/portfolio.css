@@ -54,12 +54,12 @@ html {
 }
 
 .header {
-  position: fixed;
-  z-index: 100;
+  position: relative;
   top: 0;
   width: 100%;
   outline: #ececec solid 1px;
   background-color: #ffffff;
+  z-index: 100;
 }
 
 .logo {
@@ -133,6 +133,14 @@ html {
   padding: 0;
   width: 40px;
   height: 40px;
+}
+
+.header__button:hover {
+  fill: #2196f3;
+}
+
+.header__button:focus {
+  fill: #2196f3;
 }
 
 .navigation__list {
@@ -219,7 +227,6 @@ html {
 }
 
 .our-projects {
-  margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -326,6 +333,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  font-size: 3.75vw;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
@@ -336,6 +344,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  font-size: 3.33vw;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
