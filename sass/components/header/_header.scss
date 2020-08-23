@@ -4,7 +4,6 @@
   width: 100%;
   outline: #ececec solid 1px;
   background-color: $primary-white-color;
-  z-index: 100;
 }
 
 .header__container {
@@ -22,9 +21,7 @@
   }
 
   .header_menu {
-    // opacity: 0;
-    transform: translateY(-150%);
-    // pointer-events: none;
+    transform: translateY(-50%) scaleY(0);
     position: absolute;
     top: 100%;
     left: 0;
@@ -36,7 +33,7 @@
       0px 1px 3px rgba(0, 0, 0, 0.16);
 
     transition: all 250ms $cubic;
-    z-index: -1;
+    z-index: 2;
   }
 
   .header__button {
@@ -54,10 +51,8 @@
     }
   }
   .header_menu.is-open {
-    // opacity: 1;
-    transform: translateY(0%);
-    // transform: scaleY(1);
-    // pointer-events: auto;
+    // transform: translateY(0%);
+    transform: translateY(0%) scaleY(1);
   }
 
   .header__menu-icon-close {
