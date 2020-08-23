@@ -1,6 +1,5 @@
 .our-projects {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
 }
 
 .our-projects__container {
@@ -13,4 +12,10 @@
 
 .our-projects__title {
   @extend %visually-hidden;
+}
+
+@media screen and(min-width:1200px) {
+  .our-projects {
+    padding: 94px 0px;
+  }
 }

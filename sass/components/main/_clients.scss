@@ -1,6 +1,5 @@
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
 }
 
 .clients__container {
@@ -74,6 +73,9 @@
 }
 
 @media screen and(min-width: 1200px) {
+  .clients {
+    padding: 94px 0px;
+  }
   .clients__item {
     width: calc((100% - 150px) / 6);
 
