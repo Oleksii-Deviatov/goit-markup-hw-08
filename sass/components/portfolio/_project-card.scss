@@ -29,7 +29,7 @@
   font-family: $main-font;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.555;
   letter-spacing: 0.03em;
   color: $text-white-color;
 
@@ -61,7 +61,6 @@
   font-family: $main-font;
   font-weight: 700;
   font-size: 17px;
-  // font-size: 3.75vw;
   line-height: 2;
   letter-spacing: 0.06em;
 
@@ -74,20 +73,41 @@
   font-family: $main-font;
   font-weight: 400;
   font-size: 16px;
-  // font-size: 3.33vw;
   line-height: 1.87;
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
 }
+
+@media screen and (max-width: 479px) {
+  .project-card__description {
+    font-size: 4vw;
+  }
+
+  .project-card__title {
+    font-size: 3.75vw;
+  }
+
+  .project-card__name {
+    font-size: 3.33vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project-card {
     width: calc((100% - 30px) / 2);
+  }
+
+  .project-card__description {
+    padding: 49px 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project-card {
     width: calc((100% - 60px) / 3);
+  }
+  .project-card__description {
+    padding: 63px 24px;
   }
 }

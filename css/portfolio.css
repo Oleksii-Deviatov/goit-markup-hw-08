@@ -438,7 +438,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.555;
   letter-spacing: 0.03em;
   color: #ffffff;
   position: absolute;
@@ -481,15 +481,33 @@ html {
   color: #757575;
 }
 
+@media screen and (max-width: 479px) {
+  .project-card__description {
+    font-size: 4vw;
+  }
+  .project-card__title {
+    font-size: 3.75vw;
+  }
+  .project-card__name {
+    font-size: 3.33vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project-card {
     width: calc((100% - 30px) / 2);
+  }
+  .project-card__description {
+    padding: 49px 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project-card {
     width: calc((100% - 60px) / 3);
+  }
+  .project-card__description {
+    padding: 63px 24px;
   }
 }
 
