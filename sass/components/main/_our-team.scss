@@ -16,7 +16,7 @@
   font-family: $main-font;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.17;
+  line-height: 1.178;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -26,7 +26,15 @@
 .our-team__list {
   @extend %list;
 }
+@media screen and (max-width: 767px) {
+  .our-team__teammate-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
-.our-team__teammate-card:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and(min-width: 768px) {
+  .our-team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -1,3 +1,65 @@
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}
+
 .what-we-do {
-  display: none;
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.what-we-do__container {
+  @extend %container;
+}
+
+.what-we-do__main-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding: 0;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-title-color;
+}
+.what-we-do__list {
+  @extend %list;
+  display: flex;
+}
+
+.what-we-do__card:not(:last-child) {
+  margin-right: 30px;
+}
+.what-we-do__wrapper {
+  position: relative;
+}
+.what-we-do__img {
+  display: block;
+}
+
+.what-we-do__title {
+  display: block;
+  margin: 0;
+  padding: 27px 0px;
+
+  color: $text-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
