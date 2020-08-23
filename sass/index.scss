@@ -2,6 +2,9 @@
 @import "./base/box-sizing";
 @import "./utils/placeholders";
 @import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/contacts";
 
 @import "./components/main/hero";
 @import "./components/main/button";
@@ -16,5 +19,8 @@
 @import "./components/main/clients";
 
 @import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/join";
+@import "./components/footer/sign";
 
 @import "./components/modal/modal";

@@ -6,9 +6,6 @@
 }
 
 .backdrop {
-  // padding-left: 15px;
-  // padding-right: 15px;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -26,8 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  max-height: 609px;
-  // width: 100%;
+  height: 609px;
   max-width: 450px;
   text-align: center;
   background: $primary-white-color;

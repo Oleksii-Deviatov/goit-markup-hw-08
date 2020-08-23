@@ -1,0 +1,34 @@
+.projects {
+  @extend %list;
+}
+
+@media screen and (max-width: 767px) {
+  .projects__project-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects__project-card:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .projects__project-card:not(:nth-child(-n + 2)) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__project-card:not(:nth-child(-n + 3)) {
+    margin-top: 30px;
+  }
+  .projects__project-card:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+  }
+}

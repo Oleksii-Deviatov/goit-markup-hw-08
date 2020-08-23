@@ -3,6 +3,7 @@
   padding-bottom: 60px;
   background-color: $secondary-white-color;
 }
+
 .our-team__container {
   @extend %container;
 }
@@ -26,6 +27,7 @@
 .our-team__list {
   @extend %list;
 }
+
 @media screen and (max-width: 767px) {
   .our-team__teammate-card:not(:last-child) {
     margin-bottom: 30px;

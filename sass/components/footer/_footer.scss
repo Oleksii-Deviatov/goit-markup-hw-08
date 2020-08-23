@@ -3,6 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer__container {
   @extend %container;
   @media screen and (max-width: 1199px) {
@@ -19,120 +20,8 @@
   fill: #ffffff;
 }
 
-.address__list {
-  @extend %list;
-}
-
-.address__item:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.address__location {
-  text-decoration: none;
-
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: $text-white-color;
-}
-
-.address__email,
-.address__tel {
-  text-decoration: none;
-
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.join__text {
-  margin-bottom: 20px;
-  display: block;
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.footer_social-list {
+.footer__social-list {
   margin-bottom: 60px;
-}
-
-.sign__text {
-  display: block;
-
-  margin-bottom: 20px;
-
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: $text-white-color;
-}
-
-.sign-form__input {
-  @media screen and(max-width:480px) {
-    margin-bottom: 20px;
-  }
-
-  padding: 15px 16px;
-
-  width: 100%;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background: $footer-background-color;
-
-  &::placeholder {
-    font-family: $main-font;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
-
-.sign__button {
-  display: inline-flex;
-  align-items: center;
-  fill: #ffffff;
-}
-
-.sign__icon {
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 1199px) {
-  .address__list {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -144,12 +33,6 @@
   .footer__address-wrapper {
     flex-grow: 2;
   }
-  .join {
-    flex-grow: 2;
-  }
-  .sign-form__input {
-    margin-bottom: 20px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -158,16 +41,5 @@
   }
   .footer__address-wrapper {
     margin-right: 70px;
-  }
-  .join {
-    margin-right: 93px;
-  }
-
-  .sign-form {
-    display: flex;
-  }
-  .sign-form__input {
-    width: 358px;
-    margin-right: 12px;
   }
 }

@@ -1,0 +1,25 @@
+.logo {
+  @extend %link;
+  color: #2196f3;
+  display: block;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo__studio--black {
+  color: #000000;
+}
+
+.logo__studio--white {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.193;
+  }
+}
