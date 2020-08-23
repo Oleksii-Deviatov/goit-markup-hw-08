@@ -30,6 +30,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow: auto;
 }
 
 .backdrop__title {
@@ -211,6 +212,9 @@
     fill: $accent-color;
   }
 }
+.modal-open {
+  overflow: hidden;
+}
 
 @media screen and(max-width:767px) {
   .backdrop {
@@ -226,6 +230,12 @@
   }
 }
 
-.modal-open {
-  overflow-y: hidden;
+@media screen and (max-height: 639px) {
+  .backdrop__container {
+    height: calc(100% - 10px);
+  }
+  .backdrop {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
