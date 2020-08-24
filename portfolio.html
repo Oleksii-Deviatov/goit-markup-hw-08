@@ -27,7 +27,7 @@
             class="header__button"
             type="button"
             aria-expanded="false"
-            aria-controls="menu-container"
+            aria-controls="header_menu"
             data-menu-button
           >
             <svg
@@ -46,16 +46,14 @@
             </svg>
           </button>
         </div>
-        <div class="header_menu" data-menu>
+        <div class="header_menu" id="header_menu" data-menu>
           <nav class="navigation">
             <ul class="navigation__list">
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--active">
                 <a class="navigation__link" href="./index.html">Студия</a>
               </li>
               <li class="navigation__item">
-                <a
-                  class="navigation__link navigation__item--active"
-                  href="./portfolio.html"
+                <a class="navigation__link" href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
@@ -122,9 +120,9 @@
                   <picture class="project-card__img">
                     <source
                       srcset="
-                        ./images/projects/mob/mob_pr1.webp    270w,
-                        ./images/projects/mob/mob_pr1@2x.webp 540w,
-                        ./images/projects/mob/mob_pr1@3x.webp 810w
+                        ./images/projects/desk/desk_pr1.webp    270w,
+                        ./images/projects/desk/desk_pr1@2x.webp 540w,
+                        ./images/projects/desk/desk_pr1@3x.webp 810w
                       "
                       type="image/webp"
                       sizes="270px"
@@ -132,9 +130,9 @@
                     />
                     <source
                       srcset="
-                        ./images/projects/mob/mob_pr1.jpg    270w,
-                        ./images/projects/mob/mob_pr1@2x.jpg 540w,
-                        ./images/projects/mob/mob_pr1@3x.jpg 810w
+                        ./images/projects/desk/desk_pr1.jpg    270w,
+                        ./images/projects/desk/desk_pr1@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr1@3x.jpg 810w
                       "
                       type="image/jpeg"
                       sizes="270px"
@@ -142,9 +140,9 @@
                     />
                     <source
                       srcset="
-                        ./images/projects/mob/mob_pr1.webp     354w,
-                        ./images/projects/mob/mob_pr1@2x.webp  708w,
-                        ./images/projects/mob/mob_pr1@3x.webp 1062w
+                        ./images/projects/tab/tab_pr1.webp     354w,
+                        ./images/projects/tab/tab_pr1@2x.webp  708w,
+                        ./images/projects/tab/tab_pr1@3x.webp 1062w
                       "
                       type="image/webp"
                       sizes="354px"
@@ -167,7 +165,7 @@
                         ./images/projects/mob/mob_pr1@3x.webp 1350w
                       "
                       type="image/webp"
-                      sizes="(min-width: 480px) 450px (min-width: 100px) 100vw"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
                     />
                     <img
                       srcset="
@@ -177,7 +175,7 @@
                       "
                       src="./images/projects/mob/mob_pr1.jpg "
                       alt="веб сайт на ноутбуке"
-                      sizes="(min-width: 480px) 450px (min-width: 100px) 100vw"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
                     />
                   </picture>
                   <p class="project-card__description">
@@ -196,11 +194,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr2.jpg"
-                    alt="постер"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr2.webp    270w,
+                        ./images/projects/desk/desk_pr2@2x.webp 540w,
+                        ./images/projects/desk/desk_pr2@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr2.jpg    270w,
+                        ./images/projects/desk/desk_pr2@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr2@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr2.webp     354w,
+                        ./images/projects/tab/tab_pr2@2x.webp  708w,
+                        ./images/projects/tab/tab_pr2@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr2.jpg     354w,
+                        ./images/projects/tab/tab_pr2@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr2@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr2.webp     450w,
+                        ./images/projects/mob/mob_pr2@2x.webp  900w,
+                        ./images/projects/mob/mob_pr2@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr2.jpg     450w,
+                        ./images/projects/mob/mob_pr2@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr2@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr2.jpg "
+                      alt="Постер"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -219,11 +273,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr3.jpg"
-                    alt="эмблема ресторана"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr3.webp    270w,
+                        ./images/projects/desk/desk_pr3@2x.webp 540w,
+                        ./images/projects/desk/desk_pr3@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr3.jpg    270w,
+                        ./images/projects/desk/desk_pr3@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr3@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr4.webp     354w,
+                        ./images/projects/tab/tab_pr4@2x.webp  708w,
+                        ./images/projects/tab/tab_pr4@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr4.jpg     354w,
+                        ./images/projects/tab/tab_pr4@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr4@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr4.webp     450w,
+                        ./images/projects/mob/mob_pr4@2x.webp  900w,
+                        ./images/projects/mob/mob_pr4@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr4.jpg     450w,
+                        ./images/projects/mob/mob_pr4@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr4@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr4.jpg "
+                      alt="Эмблема ресторана"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -242,11 +352,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr4.jpg"
-                    alt="Наушники"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr4.webp    270w,
+                        ./images/projects/desk/desk_pr4@2x.webp 540w,
+                        ./images/projects/desk/desk_pr4@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr4.jpg    270w,
+                        ./images/projects/desk/desk_pr4@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr4@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr4.webp     354w,
+                        ./images/projects/tab/tab_pr4@2x.webp  708w,
+                        ./images/projects/tab/tab_pr4@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr4.jpg     354w,
+                        ./images/projects/tab/tab_pr4@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr4@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr4.webp     450w,
+                        ./images/projects/mob/mob_pr4@2x.webp  900w,
+                        ./images/projects/mob/mob_pr4@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr4.jpg     450w,
+                        ./images/projects/mob/mob_pr4@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr4@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr4.jpg "
+                      alt="Наушники"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -265,11 +431,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr5.jpg"
-                    alt="две коробки"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr5.webp    270w,
+                        ./images/projects/desk/desk_pr5@2x.webp 540w,
+                        ./images/projects/desk/desk_pr5@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr5.jpg    270w,
+                        ./images/projects/desk/desk_pr5@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr5@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr5.webp     354w,
+                        ./images/projects/tab/tab_pr5@2x.webp  708w,
+                        ./images/projects/tab/tab_pr5@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr5.jpg     354w,
+                        ./images/projects/tab/tab_pr5@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr5@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr5.webp     450w,
+                        ./images/projects/mob/mob_pr5@2x.webp  900w,
+                        ./images/projects/mob/mob_pr5@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr5.jpg     450w,
+                        ./images/projects/mob/mob_pr5@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr5@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr5.jpg "
+                      alt="Две коробки"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -288,11 +510,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr6.jpg"
-                    alt="Веб сайт на мониторе"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr6.webp    270w,
+                        ./images/projects/desk/desk_pr6@2x.webp 540w,
+                        ./images/projects/desk/desk_pr6@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr6.jpg    270w,
+                        ./images/projects/desk/desk_pr6@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr6@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr6.webp     354w,
+                        ./images/projects/tab/tab_pr6@2x.webp  708w,
+                        ./images/projects/tab/tab_pr6@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr6.jpg     354w,
+                        ./images/projects/tab/tab_pr6@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr6@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr6.webp     450w,
+                        ./images/projects/mob/mob_pr6@2x.webp  900w,
+                        ./images/projects/mob/mob_pr6@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr6.jpg     450w,
+                        ./images/projects/mob/mob_pr6@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr6@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr6.jpg "
+                      alt="Веб сайт на мониторе"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -311,11 +589,57 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr7.jpg"
-                    alt="Дизайн"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr7.jpg    270w,
+                        ./images/projects/desk/desk_pr7@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr7@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr7.webp     354w,
+                        ./images/projects/tab/tab_pr7@2x.webp  708w,
+                        ./images/projects/tab/tab_pr7@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr7.jpg     354w,
+                        ./images/projects/tab/tab_pr7@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr7@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr7.webp     450w,
+                        ./images/projects/mob/mob_pr7@2x.webp  900w,
+                        ./images/projects/mob/mob_pr7@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr7.jpg     450w,
+                        ./images/projects/mob/mob_pr7@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr7@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr7.jpg "
+                      alt="Бирка с надписями"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -334,11 +658,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr8.jpg"
-                    alt="Бирка с надписями"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr8.webp    270w,
+                        ./images/projects/desk/desk_pr8@2x.webp 540w,
+                        ./images/projects/desk/desk_pr8@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr8.jpg    270w,
+                        ./images/projects/desk/desk_pr8@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr8@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr8.webp     354w,
+                        ./images/projects/tab/tab_pr8@2x.webp  708w,
+                        ./images/projects/tab/tab_pr8@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr8.jpg     354w,
+                        ./images/projects/tab/tab_pr8@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr8@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr8.webp     450w,
+                        ./images/projects/mob/mob_pr8@2x.webp  900w,
+                        ./images/projects/mob/mob_pr8@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr8.jpg     450w,
+                        ./images/projects/mob/mob_pr8@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr8@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr8.jpg "
+                      alt="Бирка с надписями"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -357,11 +737,67 @@
             <li class="project-card projects__project-card">
               <a class="project-card__link" href="">
                 <div class="project-card__thumb">
-                  <img
-                    class="project-card__img"
-                    src="./images/projects/mob_pr9.jpg"
-                    alt="Бирка с надписями"
-                  />
+                  <picture class="project-card__img">
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr9.webp    270w,
+                        ./images/projects/desk/desk_pr9@2x.webp 540w,
+                        ./images/projects/desk/desk_pr9@3x.webp 810w
+                      "
+                      type="image/webp"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/desk/desk_pr9.jpg    270w,
+                        ./images/projects/desk/desk_pr9@2x.jpg 540w,
+                        ./images/projects/desk/desk_pr9@3x.jpg 810w
+                      "
+                      type="image/jpeg"
+                      sizes="270px"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr9.webp     354w,
+                        ./images/projects/tab/tab_pr9@2x.webp  708w,
+                        ./images/projects/tab/tab_pr9@3x.webp 1062w
+                      "
+                      type="image/webp"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/tab/tab_pr9.jpg     354w,
+                        ./images/projects/tab/tab_pr9@2x.jpg  708w,
+                        ./images/projects/tab/tab_pr9@3x.jpg 1062w
+                      "
+                      type="image/jpeg"
+                      sizes="354px"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/mob/mob_pr9.webp     450w,
+                        ./images/projects/mob/mob_pr9@2x.webp  900w,
+                        ./images/projects/mob/mob_pr9@3x.webp 1350w
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/projects/mob/mob_pr9.jpg     450w,
+                        ./images/projects/mob/mob_pr9@2x.jpg  900w,
+                        ./images/projects/mob/mob_pr9@3x.jpg 1350w
+                      "
+                      src="./images/projects/mob/mob_pr9.jpg "
+                      alt="Приложение на ноутбуке"
+                      sizes="(min-width: 480px) 450px, (min-width: 100px) 100vw"
+                    />
+                  </picture>
                   <p class="project-card__description">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -385,8 +821,8 @@
       <div class="footer__container">
         <div class="footer__address-wrapper">
           <a class="logo footer__logo" lang="en" href="./index.html"
-            >Web<span class="logo__studio--white">Studio</span></a
-          >
+            >Web<span class="logo__studio--white">Studio</span>
+          </a>
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
@@ -415,7 +851,7 @@
         </div>
         <div class="join">
           <b class="join__text footer_join-text">присоединяйтесь</b>
-          <ul class="social-list footer_social-list">
+          <ul class="social-list footer__social-list">
             <li class="social-list__item">
               <a
                 class="social-list__link social-list__link--grey-background-white-icons"
@@ -466,6 +902,7 @@
             </li>
           </ul>
         </div>
+
         <div class="sign footer__sign">
           <b class="sign__text">подпишитесь на рассылку</b>
           <form class="sign-form js-speaker-form">
