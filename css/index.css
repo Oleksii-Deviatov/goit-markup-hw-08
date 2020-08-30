@@ -1138,6 +1138,10 @@ html {
   overflow: hidden;
 }
 
+.backdrop-form__icon-close {
+  position: absolute;
+}
+
 @media screen and (max-width: 767px) {
   .backdrop {
     padding-left: 15px;
